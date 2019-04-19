@@ -3,7 +3,7 @@ const bodyParser = require('body-parser')
 const mongoose = require('mongoose')
 const UserRoutes = require('./express/routes/users')
 
-mongoose.connect('mongodb://localhost/admin')
+mongoose.connect('mongodb+srv://admin:admin@cluster0-1ldg7.mongodb.net/test?retryWrites=true')
 
 const port = process.env.PORT || 4001
 const app = express()
